@@ -7,3 +7,14 @@ $color-site: #143444;
 $project-designs: #ececec;
 
 $expertise-detail: rgba(50, 50, 50, .2) ;
+
+//Contact form 7
+$sent-ok-color: #85C555 ;
+$sent-warning-color: #fcd920 ;
+$not-valid-tip-color: #EA465A ;
+
+$alpha-color: 0.5;
+
+$sent-ok-alpha: rgba($sent-ok-color, $alpha-color) ;
+$sent-warning-alpha: rgba($sent-warning-color, $alpha-color) ;
+$not-valid-tip-alpha: rgba($not-valid-tip-color, $alpha-color) ;
