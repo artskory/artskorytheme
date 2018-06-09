@@ -292,6 +292,53 @@ a.btn.white {
 .filter {
   background-color: rgba(0, 0, 0, 0.6); }
 
+/* Single */
+article p {
+  text-align: justify;
+  line-height: 28px; }
+article img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px; }
+
+.text-center {
+  text-align: center; }
+
+.description-fixed {
+  top: 0;
+  right: 0;
+  position: -webkit- fixed;
+  position: fixed; }
+
+.border {
+  width: 200px;
+  height: 2px;
+  margin: 20px 0;
+  border: 1px solid #32a8df !important; }
+
+.nav-post {
+  opacity: .5;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s; }
+  .nav-post:hover {
+    opacity: 1;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s; }
+
+.post-title, a.nav-post {
+  color: #000; }
+
+.next-post {
+  text-align: right; }
+
+.next-post, .prev-post {
+  padding-top: 20px;
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+  background-color: #f0f0f0; }
+
 /* À propos */
 .title-cv {
   color: #32A8DF;
