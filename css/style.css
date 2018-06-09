@@ -479,4 +479,80 @@ span.wpcf7-not-valid-tip {
 .map {
   padding: 0; }
 
+/* 404
+   ========================================================================== */
+.body {
+  height: 100%;
+  margin-top: 0 !important;
+  font-family: Exo, sans-serif;
+  background-color: #143444; }
+
+svg {
+  margin-top: -250px;
+  margin-left: -400px;
+  position: absolute;
+  top: 50%;
+  left: 50%; }
+
+.message-box {
+  width: 380px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: 50px;
+  top: 50%;
+  left: 50%;
+  font-weight: 300;
+  position: absolute;
+  color: #FFF; }
+  .message-box h1 {
+    margin-bottom: 40px;
+    font-size: 60px;
+    line-height: 46px; }
+
+.buttons-con .action-link-wrap {
+  margin-top: 40px; }
+  .buttons-con .action-link-wrap a {
+    margin-right: 10px;
+    padding: 8px 25px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 4px;
+    background: #32a8df;
+    color: #FFF !important;
+    cursor: pointer;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+    .buttons-con .action-link-wrap a:hover {
+      background: #5A5C6C;
+      color: #fff; }
+
+#polygon-1, #polygon-2, #polygon-3, #polygon-4 {
+  -webkit-animation: float 1s infinite ease-in-out alternate;
+  animation: float 1s infinite ease-in-out alternate; }
+
+#polygon-2 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s; }
+
+#polygon-3 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s; }
+
+#polygon-4 {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s; }
+
+@-webkit-keyframes float {
+  100% {
+    -webkit-transform: translate(10px, 10px);
+    -ms-transform: translate(10px, 10px);
+    transform: translate(10px, 10px); } }
+@keyframes float {
+  100% {
+    -webkit-transform: translate(10px, 10px);
+    -ms-transform: translate(10px, 10px);
+    transform: translate(10px, 10px); } }
+
 /*# sourceMappingURL=style.css.map */
