@@ -1,0 +1,10 @@
+ @import url('https://fonts.googleapis.com/css?family=Exo+2:300,400,700');
+
+ $font: 'Exo 2', sans-serif;
+
+@font-face {
+    font-family: artskory-icon;
+    src: '../fonts/artskory-icon-Regular.eot';
+    src: url(../fonts/artskory-icon-Regular.eot?#iefix&v=1.0) format('embedded-opentype'), url(../fonts/artskory-icon-Regular.woff2?v=1.0) format('woff2'), url(../fonts/artskory-icon-Regular.woff?v=1.0) format('woff'), url(../fonts/artskory-icon-Regular.ttf?v=1.0) format('truetype'), url(../fonts/artskory-icon-Regular.svg?v=1.0#fontawesomeregular) format('svg');
+    font-weight: 400;
+    font-style: normal; }

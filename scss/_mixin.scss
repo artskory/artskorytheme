@@ -1,0 +1,175 @@
+// Global
+// ==========================================================================
+@mixin link-skewed-transition($time) {
+    -webkit-transition: color $time;
+    -o-transition: color $time;
+    transition: color $time; }
+
+@mixin link-skewed-transition-a-before($time) {
+    -webkit-transition: -webkit-transform $time, opacity $time;
+    -o-transition: -o-transform $time, opacity $time;
+    -webkit-transition: opacity $time, -webkit-transform $time;
+    transition: opacity $time, -webkit-transform $time;
+    -o-transition: transform $time, opacity $time;
+    transition: transform $time, opacity $time;
+    transition: transform $time, opacity $time, -webkit-transform $time; }
+
+@mixin link-skewed-transform-a-before($skewY, $skewX) {
+    -webkit-transform: skewY($skewY) skewX($skewX);
+    -ms-transform: skewY($skewY) skewX($skewX);
+    transform: skewY($skewY) skewX($skewX); }
+
+@mixin banner-transition-duration($time) {
+    -webkit-transition-duration: $time;
+    -o-transition-duration: $time;
+    transition-duration: $time; }
+
+@mixin navbar-box-shadow($val) {
+    -webkit-box-shadow: $val;
+    box-shadow: $val; }
+
+@mixin link-skewed-backface-visibility($val) {
+    -webkit-backface-visibility: $val;
+    backface-visibility: $val; }
+
+@mixin link-skewed-box-sizing($val) {
+    -webkit-box-sizing: $val;
+    box-sizing: $val; }
+
+@mixin link-skewed-backface-visibility($val) {
+    -webkit-backface-visibility: $val;
+    backface-visibility: $val; }
+
+@mixin main-box-shadow($val, $red, $green, $blue, $alpha) {
+    -webkit-box-shadow: $val rgba($red, $green, $blue, $alpha);
+    box-shadow: $val rgba($red, $green, $blue, $alpha); }
+
+// Index
+// ==========================================================================
+@mixin superpose-translate($X, $Y) {
+    -webkit-transform: translate($X, $Y);
+    -ms-transform: translate($X, $Y);
+    transform: translate($X, $Y); }
+
+@mixin project-designs-border($val) {
+    border-top: $val;
+    border-bottom: $val; }
+
+@mixin grow-transition($val) {
+    -webkit-transition: $val;
+    -o-transition: $val;
+    transition: $val; }
+
+@mixin grow-hover-transition($val) {
+    -webkit-transform: scale($val);
+    -ms-transform: scale($val);
+    transform: scale($val); }
+
+// Footer
+// ==========================================================================
+@mixin input-box-sizing($val) {
+    -webkit-box-sizing: $val;
+    box-sizing: $val; }
+
+// Single
+// ==========================================================================
+@mixin nav-post-transition($val) {
+    -webkit-transition: $val;
+    -o-transition: $val;
+    transition: $val; }
+
+// Templates pages
+// Portfolio
+// ==========================================================================
+@mixin grid-a-hover($time) {
+    -webkit-transition: $time;
+    -o-transition: $time;
+    transition: $time; }
+
+@mixin card-ui-figure-img($time) {
+    -webkit-transition: -webkit-transform $time;
+    -o-transition: -webkit-transform $time;
+    transition: -webkit-transform $time;
+    -o-transition: transform $time;
+    transition: transform $time;
+    transition: transform $time, -webkit-transform $time; }
+
+@mixin card-ui-figure-hover($tY) {
+    -webkit-transform: translateY($tY);
+    -ms-transform: translateY($tY);
+    transform: translateY($tY); }
+
+@mixin card-ui-figcaption-translateY($Y) {
+    -webkit-transform: translateY($Y);
+    -ms-transform: translateY($Y);
+    transform: translateY($Y); }
+
+@mixin card-ui-figcaption-transform-opacity($tt, $ot) {
+    -webkit-transition: -webkit-transform $tt, opacity $ot;
+    -o-transition: -o-transform $tt, opacity $ot;
+    transition: -webkit-transform $tt, opacity $ot;}
+
+@mixin card-ui-figure-hover-figcaption-translateY($tY) {
+    -webkit-transform: translateY($tY);
+    -ms-transform: translateY($tY);
+    transform: translateY($tY); }
+
+@mixin card-ui-figure-hover-figcaption-transform-opacity($tt, $ot) {
+    -webkit-transition: -webkit-transform $tt, opacity $ot;
+    -o-transition: -o-transform $tt, opacity $ot;
+    -webkit-transition: opacity $ot, -webkit-transform $tt;
+    transition: opacity $ot, -webkit-transform $tt;
+    -o-transition: transform $tt, opacity $ot;
+    transition: transform $tt, opacity $ot;
+    transition: transform $tt, opacity $ot, -webkit-transform $tt; }
+
+// À propos
+// ==========================================================================
+@mixin expertise-box-shadow($val) {
+    -webkit-box-shadow: $val;
+    box-shadow: $val; }
+
+// Contact
+// ==========================================================================
+@mixin colonne-box-sizing($val) {
+    -webkit-box-sizing: $val;
+    -o-box-sizing: $val;
+    box-sizing: $val; }
+
+@mixin wpcf7-box-sizing($val) {
+    -webkit-box-sizing: $val;
+    box-sizing: $val; }
+
+// 404
+// ==========================================================================
+@mixin buttons-con-a-transition($val) {
+    -webkit-transition: $val;
+    -o-transition: $val;
+    transition: $val; }
+
+@mixin polygons($time) {
+    -webkit-animation: float $time infinite ease-in-out alternate;
+    animation: float $time infinite ease-in-out alternate; }
+
+@mixin polygon-2($time) {
+    -webkit-animation-delay: $time;
+    animation-delay: $time; }
+
+@mixin polygon-3($time) {
+    -webkit-animation-delay: $time;
+    animation-delay: $time; }
+
+@mixin polygon-4($time) {
+    -webkit-animation-delay: $time;
+    animation-delay: $time; }
+
+@mixin keyframes($tX, $tY) {
+    -webkit-transform: translate($tX, $tY);
+    -ms-transform: translate($tX, $tY);
+    transform: translate($tX, $tY); }
+
+// Autre
+// ==========================================================================
+@mixin description-fixed-position($val) {
+    position:-webkit-$val;
+    position: $val; }
