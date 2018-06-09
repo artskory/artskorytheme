@@ -19,11 +19,6 @@
     -ms-transform: skewY($skewY) skewX($skewX);
     transform: skewY($skewY) skewX($skewX); }
 
-@mixin banner-transition-duration($time) {
-    -webkit-transition-duration: $time;
-    -o-transition-duration: $time;
-    transition-duration: $time; }
-
 @mixin navbar-box-shadow($val) {
     -webkit-box-shadow: $val;
     box-shadow: $val; }

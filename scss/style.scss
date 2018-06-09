@@ -6,8 +6,7 @@
    ========================================================================== */
 body {
     padding-bottom: 360px;
-    font-family: $font;
-    font-size: 14px; }
+    font-family: $font; }
 
 A[href="#"], A[href=""] {
     display: none;
@@ -104,7 +103,7 @@ ul {
     margin-top: 0; }
 
 input {
-    padding: 0 135px 0 10px;
+    padding: 0 140px 0 10px;
     font-size: 1em;
     letter-spacing: .02em;
     line-height: 32px;
@@ -271,3 +270,49 @@ a.btn.white {
         border: 1px solid #efefef;
         background-color: #fff; }
 }
+
+/* Templates pages
+   ==========================================================================
+   Global */
+.banner {
+    position: relative;
+    text-align: center;
+    background-position: center center;
+    background-size: cover;
+    color: #FFF;
+    h1 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 1.2; }
+}
+
+.filter {
+    background-color: rgba(0, 0, 0, .6); }
+
+/* À propos */
+.title-cv {
+    color: #32A8DF;
+    text-transform: uppercase;
+    border-bottom: 4px solid #143444; }
+
+.expertise h2 {
+        margin-top: 50px;
+        margin-bottom: 40px; }
+
+.expertise-detail {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @include expertise-box-shadow(0 2px 8px 0 $expertise-detail);
+    li {
+        padding: 10px 0;
+        font-size: 17px;
+        border-top: 1px solid rgba(50, 50, 50, .1);
+        &:last-child {
+            border-bottom: 1px solid rgba(50, 50, 50, .1); }
+    }
+}
+
+.expertise-footer li {
+        list-style: none; }
