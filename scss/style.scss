@@ -399,14 +399,6 @@ article {
     margin: 20px 0;
     border: 1px solid $links !important; }
 
-.nav-post {
-    opacity: .5;
-    @include nav-post-transition(all 1s);
-    &:hover {
-        opacity: 1;
-        @include nav-post-transition(all 1s); }
-}
-
 .post-title, a.nav-post {
     color: #000; }
 

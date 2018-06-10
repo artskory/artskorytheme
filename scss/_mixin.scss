@@ -1,40 +1,5 @@
 // Global
 // ==========================================================================
-@mixin link-skewed-transition($time) {
-    -webkit-transition: color $time;
-    -o-transition: color $time;
-    transition: color $time; }
-
-@mixin link-skewed-transition-a-before($time) {
-    -webkit-transition: -webkit-transform $time, opacity $time;
-    -o-transition: -o-transform $time, opacity $time;
-    -webkit-transition: opacity $time, -webkit-transform $time;
-    transition: opacity $time, -webkit-transform $time;
-    -o-transition: transform $time, opacity $time;
-    transition: transform $time, opacity $time;
-    transition: transform $time, opacity $time, -webkit-transform $time; }
-
-@mixin link-skewed-transform-a-before($skewY, $skewX) {
-    -webkit-transform: skewY($skewY) skewX($skewX);
-    -ms-transform: skewY($skewY) skewX($skewX);
-    transform: skewY($skewY) skewX($skewX); }
-
-@mixin navbar-box-shadow($val) {
-    -webkit-box-shadow: $val;
-    box-shadow: $val; }
-
-@mixin link-skewed-backface-visibility($val) {
-    -webkit-backface-visibility: $val;
-    backface-visibility: $val; }
-
-@mixin link-skewed-box-sizing($val) {
-    -webkit-box-sizing: $val;
-    box-sizing: $val; }
-
-@mixin link-skewed-backface-visibility($val) {
-    -webkit-backface-visibility: $val;
-    backface-visibility: $val; }
-
 @mixin main-box-shadow($val, $red, $green, $blue, $alpha) {
     -webkit-box-shadow: $val rgba($red, $green, $blue, $alpha);
     box-shadow: $val rgba($red, $green, $blue, $alpha); }
@@ -68,10 +33,9 @@
 
 // Single
 // ==========================================================================
-@mixin nav-post-transition($val) {
-    -webkit-transition: $val;
-    -o-transition: $val;
-    transition: $val; }
+@mixin description-fixed-position($val) {
+    position:-webkit-$val;
+    position: $val; }
 
 // Templates pages
 // Portfolio
@@ -162,9 +126,3 @@
     -webkit-transform: translate($tX, $tY);
     -ms-transform: translate($tX, $tY);
     transform: translate($tX, $tY); }
-
-// Autre
-// ==========================================================================
-@mixin description-fixed-position($val) {
-    position:-webkit-$val;
-    position: $val; }

@@ -412,17 +412,6 @@ article img {
   margin: 20px 0;
   border: 1px solid #32a8df !important; }
 
-.nav-post {
-  opacity: .5;
-  -webkit-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s; }
-  .nav-post:hover {
-    opacity: 1;
-    -webkit-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s; }
-
 .post-title, a.nav-post {
   color: #000; }
 
