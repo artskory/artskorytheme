@@ -273,7 +273,7 @@ a.btn.white {
 
 /* Templates pages
    ==========================================================================
-   Global */
+/*  Global */
 .banner {
     position: relative;
     text-align: center;
@@ -291,6 +291,88 @@ a.btn.white {
 
 .filter {
     background-color: rgba(0, 0, 0, .6); }
+
+/* Portfolio */
+.grid {
+    max-width: 1300px;
+    padding: 20px;
+    text-align: center;
+    ul {
+        list-style: none; }
+    li {
+        position: relative;
+        width: 360px;
+        margin: 0;
+        padding: 20px;
+        text-align: left;
+        display: inline-block; }
+    figure {
+        position: relative;
+        margin: 0; }
+    figure img {
+        position: relative;
+        max-width: 100%;
+        height: 100%;
+        display: block; }
+    figcaption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 20px 45px 20px 20px;
+        background-color: $color-site;
+        color: $links;
+        & h3 {
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            color: #fff; }
+        & em {
+            font-size: 0.8em; }
+        & ul {
+            padding-left: 20px; }
+        & li {
+            padding: 0 0 0 20px; }
+        & a {
+            padding: 0 7px 2px;
+            text-align: center;
+            border-radius: 2px;
+            background: $links;
+            color: #fff !important;
+           display: inline-block;
+            &:hover {
+                background: rgba(50, 168, 223, .5);
+                color: #fff;
+                @include grid-a-hover(.4s); }
+        }
+    }
+}
+
+.card-ui {
+    figure {
+        overflow: hidden;
+        &:hover img {
+            @include card-ui-figure-hover(-50px); }
+        &:hover figcaption {
+            opacity: 1;
+            @include card-ui-figure-hover-figcaption-translateY(0);
+            @include card-ui-figure-hover-figcaption-transform-opacity(.4s, .1s); }
+        img {
+            @include card-ui-figure-img(.4s); }
+    }
+    figcaption {
+        width: 100%;
+        height: 100px;
+        top: auto;
+        bottom: 0;
+        opacity: 0;
+        @include card-ui-figcaption-translateY(100%);
+        @include card-ui-figcaption-transform-opacity(.4s, .1s .3s);
+            a {
+            position: absolute;
+            bottom: 10px;
+            right: 10px; }
+    }
+}
 
 /* Single */
 article {
