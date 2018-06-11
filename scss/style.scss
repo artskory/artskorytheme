@@ -345,9 +345,6 @@ article {
         margin-bottom: 20px; }
 }
 
-.text-center {
-    text-align: center; }
-
 .description-fixed {
     top: 0;
     right: 0;
@@ -583,4 +580,3 @@ svg {
     100% {
     @include keyframes(10px, 10px); }
 }
-
