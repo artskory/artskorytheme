@@ -18,16 +18,13 @@
     width: 54px;
     margin-left: 20px !important; }
 
-  .grid {
-    padding: 0; }
-    .grid li {
-      width: auto; }
-
-  ul.grid {
-    margin-left: 0; }
-
   .description-fixed {
-    position: inherit; } }
+    position: inherit; }
+
+  .card-ui figure img {
+    width: 100%; }
+  .card-ui figcaption {
+    width: 100%; } }
 @media (min-width: 768px) and (max-width: 991px) {
   .superpose {
     top: 55%; }
@@ -59,7 +56,6 @@
     padding: 0 80px 0 10px; } }
 @media (max-width: 1199.98px) {
   .card-ui figcaption {
-    width: auto;
     opacity: 1;
     -webkit-transform: translateY(0%);
     -ms-transform: translateY(0%);

@@ -15,21 +15,6 @@ body {
 A[href="#"], A[href=""] {
   display: none; }
 
-.mb5 {
-  margin-bottom: 5px; }
-
-.mb30 {
-  margin-bottom: 30px; }
-
-.mb50 {
-  margin-bottom: 50px; }
-
-.mt30 {
-  margin-top: 30px; }
-
-.mt50 {
-  margin-top: 50px; }
-
 a {
   color: #32a8df; }
   a:hover {
@@ -293,61 +278,15 @@ a.btn.white {
   background-color: rgba(0, 0, 0, 0.6); }
 
 /* Portfolio */
-.grid {
-  max-width: 1300px;
-  padding: 20px;
-  text-align: center; }
-  .grid ul {
-    list-style: none; }
-  .grid li {
-    position: relative;
-    width: 360px;
-    margin: 0;
-    padding: 20px;
-    text-align: left;
-    display: inline-block; }
-  .grid figure {
-    position: relative;
-    margin: 0; }
-  .grid figure img {
+.card-ui figure {
+  position: relative;
+  margin: 0;
+  overflow: hidden; }
+  .card-ui figure img {
     position: relative;
     max-width: 100%;
     height: 100%;
     display: block; }
-  .grid figcaption {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 20px 45px 20px 20px;
-    background-color: #143444;
-    color: #32a8df; }
-    .grid figcaption h3 {
-      margin: 0;
-      padding: 0;
-      font-size: 20px;
-      color: #fff; }
-    .grid figcaption em {
-      font-size: 0.8em; }
-    .grid figcaption ul {
-      padding-left: 20px; }
-    .grid figcaption li {
-      padding: 0 0 0 20px; }
-    .grid figcaption a {
-      padding: 0 7px 2px;
-      text-align: center;
-      border-radius: 2px;
-      background: #32a8df;
-      color: #fff !important;
-      display: inline-block; }
-      .grid figcaption a:hover {
-        background: rgba(50, 168, 223, 0.5);
-        color: #fff;
-        -webkit-transition: 0.4s;
-        -o-transition: 0.4s;
-        transition: 0.4s; }
-
-.card-ui figure {
-  overflow: hidden; }
   .card-ui figure:hover img {
     -webkit-transform: translateY(-50px);
     -ms-transform: translateY(-50px);
@@ -377,6 +316,11 @@ a.btn.white {
   top: auto;
   bottom: 0;
   opacity: 0;
+  position: absolute;
+  left: 0;
+  padding: 20px 45px 20px 20px;
+  background-color: #143444;
+  color: #32a8df;
   -webkit-transform: translateY(100%);
   -ms-transform: translateY(100%);
   transform: translateY(100%);
@@ -386,7 +330,25 @@ a.btn.white {
   .card-ui figcaption a {
     position: absolute;
     bottom: 10px;
-    right: 10px; }
+    right: 10px;
+    padding: 0 7px 2px;
+    border-radius: 2px;
+    background: #32a8df;
+    color: #fff !important;
+    display: inline-block; }
+    .card-ui figcaption a:hover {
+      background: rgba(50, 168, 223, 0.5);
+      color: #fff;
+      -webkit-transition: 0.4s;
+      -o-transition: 0.4s;
+      transition: 0.4s; }
+  .card-ui figcaption h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #fff; }
+  .card-ui figcaption em {
+    font-size: 0.8em; }
 
 /* Single */
 article p {

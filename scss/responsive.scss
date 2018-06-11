@@ -22,17 +22,15 @@
         width: 54px;
         margin-left: 20px !important; }
 
-    .grid {
-        padding: 0;
-        li {
-            width: auto; }
-    }
-
-    ul.grid {
-        margin-left: 0; }
-
     .description-fixed {
         position: inherit; }
+
+    .card-ui {
+        figure img {
+            width: 100%; }
+        figcaption {
+            width: 100%; }
+    }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -71,10 +69,10 @@
     input {
         padding: 0 80px 0 10px; }
 }
+
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
     .card-ui figcaption {
-        width: auto;
         opacity: 1;
         -webkit-transform: translateY(0%);
         -ms-transform: translateY(0%);
