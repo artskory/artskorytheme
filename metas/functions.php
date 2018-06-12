@@ -1,6 +1,4 @@
 <?php
-
-
 class Arstkory_Metabox
 {
 

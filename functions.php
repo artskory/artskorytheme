@@ -26,6 +26,7 @@ $content = '<p>' . get_the_post_thumbnail($post->ID) .
 
 return $content;
 }
+
 add_filter('the_excerpt_rss', 'wpc_rss_miniature');
 add_filter('the_content_feed', 'wpc_rss_miniature');
 
@@ -36,40 +37,46 @@ function color_css_post_status() {
     .status-draft{background: #B6FF76 !important;}
     .status-future{background: #FF925C !important;}
     .status-pending{background: #92E0FF !important;}
-    .status-private{background:#FF5572 !important;}
-    .status-publish{background:#3EC9FF !important;}
+    .status-private{background: #FF5572 !important;}
+    .status-publish{background: #3EC9FF !important;}
 </style>
 <?php
 }
+
 add_action('admin_print_styles-edit.php','color_css_post_status');
 
 // Custom login logo
 function my_custom_login_logo() {
  echo '<style type="text/css">
- h1 a {background-image:url('.get_bloginfo('template_directory').'/images/logo-artskory.svg)!important;
- -webkit-background-size:inherit!important;
- background-size:inherit!important;
- width:inherit!important;}
+ h1 a {
+    width:inherit!important;
+    background-image:url('.get_bloginfo('template_directory').'/images/logo-artskory.png)!important;
+    -webkit-background-size:inherit!important;
+    background-size:inherit!important; }
 
- body {height: 100%;
+ body {
+    height: 100%;
     width: 100%;
     margin: auto;
     background: url('.get_bloginfo('template_directory').'/img/admin.jpg) no-repeat 50% 50%;
     display: table;
     top: 0;
-    background-size: cover;}
+    background-size: cover; }
  </style>';
 }
+
 add_action('login_head', 'my_custom_login_logo');
 
 function my_login_logo_url() {
- return get_bloginfo( 'url' );
+    return get_bloginfo( 'url' );
 }
+
 add_filter( 'login_headerurl', 'my_login_logo_url' );
 
 function my_login_logo_url_title() {
- return 'Logo mariage';
+    return 'Logo';
 }
+
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
 // Zone de widget
@@ -94,15 +101,12 @@ function add_search_form($items, $args) {
 if( $args->theme_location == 'secondary' )
 
 $items .= '
-
 <li class="search">
-
-<form role="search" method="get" id="searchform" action="'.home_url( '/' ).'"><input type="text" autocomplete="off" placeholder="Rechercher..."  name="s" id="s" /><button type="submit" title="Rechercher sur le site"><i class="ak ak-search"></i></button></form>
-
-</li>
-
-';
-
+    <form role="search" method="get" id="searchform" action="'.home_url( '/' ).'">
+    <input type="text" autocomplete="off" placeholder="Rechercher..." name="s" id="s" />
+    <button type="submit" title="Rechercher sur le site"><i class="ak ak-search"></i></button>
+    </form>
+</li>';
 return $items;
 }
 
@@ -113,6 +117,7 @@ function artskory_new_image(){
 add_image_size( 'artskory_thumbnail_footer', 65, 55, true );
 
 }
+
 add_action( 'after_setup_theme', 'artskory_new_image' );
 
 // Editor-style

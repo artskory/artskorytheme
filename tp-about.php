@@ -18,9 +18,9 @@ Template Name: À propos
             </div>
             <!-- Fin banner  -->
 
-           <?php if (have_posts()) : while(have_posts()) : the_post(); ?>
-            <?php the_content(); ?>
-            <?php endwhile; else : ?>
+            <?php if (have_posts()) : while(have_posts()) : the_post(); ?>
+                <?php the_content(); ?>
+                <?php endwhile; else : ?>
                 <p>Bonjour, désolé, mais il n'y a pas encore d'articles sur cette page </p>
             <?php endif; ?>
 
