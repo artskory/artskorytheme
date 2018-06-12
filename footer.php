@@ -138,5 +138,7 @@
         <!-- Wow -->
         <script src="<?php bloginfo('stylesheet_directory'); ?>/js/wow.min.js"></script>
         <script src="<?php bloginfo('stylesheet_directory'); ?>/js/artskory.wow.min.js"></script>
+        <!-- Maps -->
+        <script src="js/maps.min.js"></script>
     </body>
 </html>
