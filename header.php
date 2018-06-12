@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/bootstrap-social.min.css">
     <!-- CSS responsive -->
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/responsive.min.css">
+    <!-- CSS animate -->
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/animate.min.css" >
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Scroll -->
