@@ -520,6 +520,12 @@ span.wpcf7-not-valid-tip {
     font-family: Exo, sans-serif;
     background-color: $color-site;
 }
+
+.center {
+    margin-top: 50vh;
+    transform: translateY(-50%);
+}
+
 svg {
     margin-top: -250px;
     margin-left: -400px;
@@ -542,6 +548,7 @@ svg {
         font-size: 60px;
         line-height: 46px; }
 }
+
 .buttons-con .action-link-wrap {
     margin-top: 40px;
     a {
