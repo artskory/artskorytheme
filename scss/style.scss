@@ -4,13 +4,15 @@
 
 /* Global
    ========================================================================== */
+html {
+    margin-top: 0 !important; } /* Because it's add by wp */
+
 body {
     padding-bottom: 360px;
     font-family: $font; }
 
 A[href="#"], A[href=""] {
-    display: none;
-}
+    display: none; }
 
 a {
     color: $links;
@@ -84,8 +86,8 @@ ul {
     color: #fff;
 }
 
-.search {
-    margin-top: 0; }
+#menu-secondary {
+    margin-left: 0; }
 
 input {
     padding: 0 140px 0 10px;
