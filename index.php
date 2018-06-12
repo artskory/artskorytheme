@@ -1,4 +1,6 @@
-<?php get_header(); ?>
+            <!-- Header -->
+            <?php get_header(); ?>
+            <!-- Fin header -->
 
             <!-- Background video -->
             <section class="bgvideo d-none d-md-block">
@@ -116,4 +118,6 @@
                 </div>
             </div><!-- Fin références -->
 
-<?php get_footer(); ?>
+        <!-- Footer -->
+        <?php get_footer(); ?>
+        <!-- Fin footer -->
