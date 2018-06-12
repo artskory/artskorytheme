@@ -6,9 +6,9 @@
                     <div class="row">
                         <div class="filter-video embed-responsive embed-responsive-16by9-index">
                             <div id="coordinates">
-                                <input type="hidden" id="video_1" value=videos/videos-3.mp4>
-                                <input type="hidden" id="video_2" value=videos/videos-2.mp4>
-                                <input type="hidden" id="video_3" value=videos/videos-1.mp4>
+                                <input type="hidden" id="video_1" value=<?php echo echo_theme_movie_1(); ?>>
+                                <input type="hidden" id="video_2" value=<?php echo echo_theme_movie_2(); ?>>
+                                <input type="hidden" id="video_3" value=<?php echo echo_theme_movie_3(); ?>>
                             </div>
                             <video preload="auto" autoplay="true" loop="true" width="100%">
                                  <script type="text/javascript">randomVideo();</script>
