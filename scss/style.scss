@@ -89,6 +89,10 @@ ul {
 #menu-secondary {
     margin-left: 0; }
 
+.search-col > .nav {
+    flex-wrap: inherit;
+}
+
 input {
     padding: 0 140px 0 10px;
     font-size: 1em;
@@ -112,6 +116,9 @@ input {
         background-size: contain;
         display: block; }
 }
+
+.social h3 {
+    margin-top: 2em; }
 
 /* scrollToTop */
 #scrollToTop {

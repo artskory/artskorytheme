@@ -46,7 +46,7 @@
                         <div class="row">
 
                             <!-- Search -->
-                            <div class="col">
+                            <div class="col search-col">
                                 <h3>Rechercher sur le site</h3>
                                 <?php
                                     wp_nav_menu( array(
