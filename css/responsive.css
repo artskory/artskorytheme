@@ -25,6 +25,9 @@
     width: 100%; }
   .card-ui figcaption {
     width: 100%; } }
+@media (max-width: 991px) {
+  div.wpcf7-mail-sent-ok, div.wpcf7-validation-errors {
+    width: 100%; } }
 @media (min-width: 768px) and (max-width: 991px) {
   .superpose {
     top: 55%; }

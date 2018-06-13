@@ -488,7 +488,7 @@ div.wpcf7-validation-errors {
   color: #9C6533; }
 
 div.wpcf7-mail-sent-ok, div.wpcf7-validation-errors {
-  width: 35%;
+  width: 50%;
   margin: 0 auto;
   padding: 5px;
   font-size: 12px;
@@ -508,7 +508,6 @@ div.wpcf7-validation-errors {
   background-color: rgba(252, 217, 32, 0.5); }
 
 span.wpcf7-not-valid-tip {
-  width: 35%;
   padding: 5px;
   font-size: 12px;
   text-align: center;
