@@ -114,20 +114,13 @@
             <i class="ak ak-chevron-up ak-color-white"></i>
         </button><!-- Fin scrollToTop -->
 
-        <!-- Cookiechoices colors -->
-        <div id="colors">
-            <input type="hidden" id="frame" value=<?php echo get_theme_mod('frame_color'); ?>>
-            <input type="hidden" id="glow" value=<?php echo get_theme_mod('glow_color'); ?>>
-            <input type="hidden" id="background" value=<?php echo get_theme_mod('background_color_cookie'); ?>>
-        </div><!-- Fin cookiechoices -->
-
         <!-- JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-        <script src="<?php bloginfo('stylesheet_directory'); ?>js/cookiechoices.min.js"></script>
-         <!-- Cookiechoices -->
-        <script>document.addEventListener('DOMContentLoaded', function(event){cookieChoices.showCookieConsentBar('<?php echo get_theme_mod('message'); ?> ', "<?php echo get_theme_mod('validation'); ?>", 'En savoir plus', '<?php bloginfo( 'url' ) ?>/<?php echo get_theme_mod('legal_link'); ?>/');});</script>
+        <!-- Cookiechoices -->
+        <script src="<?php bloginfo('stylesheet_directory'); ?>/js/cookiechoices.min.js"></script>
+        <script>document.addEventListener('DOMContentLoaded', function(event){cookieChoices.showCookieConsentBar('<?php echo get_theme_mod('message'); ?>', '<?php echo get_theme_mod('validation'); ?>', '<?php echo get_theme_mod('more'); ?>', '<?php echo get_theme_mod('legal_link'); ?>');});</script>
         <!-- Google Analytics -->
         <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -139,6 +132,6 @@
         <script src="<?php bloginfo('stylesheet_directory'); ?>/js/wow.min.js"></script>
         <script src="<?php bloginfo('stylesheet_directory'); ?>/js/artskory.wow.min.js"></script>
         <!-- Maps -->
-        <script src="js/maps.min.js"></script>
+        <script src="<?php bloginfo('stylesheet_directory'); ?>/js/maps.min.js"></script>
     </body>
 </html>

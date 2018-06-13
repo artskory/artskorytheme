@@ -13,12 +13,8 @@
  See the License for the specific language governing permissions and
  limitations under the License.
  */
-  var frame = document.getElementById("frame").value;
-  var glow = document.getElementById("glow").value;
-  var background = document.getElementById("background").value;
 
 (function(window) {
-
 
   if (!!window.cookieChoices) {
     return window.cookieChoices;
@@ -35,15 +31,15 @@
     var dismissLinkId = 'cookieChoiceDismiss';
 
     function _createHeaderElement(cookieText, dismissText, linkText, linkHref) {
-      var butterBarStyles = 'position:fixed;width:100%;background-color:#FFA500;color:#000000;' +
-          'margin:0; left:0; top:0; padding:4px;z-index:1000;text-align:center;';
+      var butterBarStyles = 'position:fixed;width:100%;background-color:#F5FFFA;color:#000000;' +
+          'margin:0; left:0; top:0; padding:4px;z-index:1000;text-align:center;font-size: 0.8rem;';
 
       var cookieConsentElement = document.createElement('div');
       cookieConsentElement.id = cookieConsentId;
       cookieConsentElement.style.cssText = butterBarStyles;
       cookieConsentElement.appendChild(_createConsentText(cookieText));
 
-                  if (!!linkText && !!linkHref) {
+			      if (!!linkText && !!linkHref) {
         cookieConsentElement.appendChild(_createInformationLink(linkText, linkHref));
       }
       cookieConsentElement.appendChild(_createDismissLink(dismissText));
@@ -53,11 +49,11 @@
 
     function _createDialogElement(cookieText, dismissText, linkText, linkHref) {
       var glassStyle = 'position:fixed;width:100%;height:100%;z-index:999;' +
-          'top:0;left:0;opacity:0.9;filter:alpha(opacity=90);' +
-          'background-color:' + background + ';';
+          'top:0;left:0;opacity:0.5;filter:alpha(opacity=50);' +
+          'background-color:#ccc;';
       var dialogStyle = 'z-index:1000;position:fixed;left:50%;top:50%';
       var contentStyle = 'position:relative;left:-50%;margin-top:-25%;' +
-          'background-color:' + frame + ';padding:20px;box-shadow:4px 4px 25px ' + glow + ';';
+          'background-color:#fff;padding:20px;box-shadow:4px 4px 25px #888;';
 
       var cookieConsentElement = document.createElement('div');
       cookieConsentElement.id = cookieConsentId;
@@ -73,7 +69,8 @@
 
       var dismissLink = _createDismissLink(dismissText);
       dismissLink.style.display = 'block';
-      dismissLink.style.textAlign = 'center';
+      dismissLink.style.textAlign = 'right';
+      dismissLink.style.marginTop = '8px';
 
       content.appendChild(_createConsentText(cookieText));
       if (!!linkText && !!linkHref) {
@@ -105,6 +102,7 @@
       _setElementText(dismissLink, dismissText);
       dismissLink.id = dismissLinkId;
       dismissLink.href = '#';
+      dismissLink.style.marginLeft = '15px';
       return dismissLink;
     }
 
@@ -112,7 +110,8 @@
       var infoLink = document.createElement('a');
       _setElementText(infoLink, linkText);
       infoLink.href = linkHref;
-      infoLink.style.display = 'block';
+      infoLink.target = '_blank';
+      infoLink.style.marginLeft = '15px';
       return infoLink;
     }
 
@@ -136,7 +135,7 @@
     }
 
     function showCookieConsentBar(cookieText, dismissText, linkText, linkHref) {
-      _showCookieConsent(cookieText, dismissText, linkText, linkHref, true);
+      _showCookieConsent(cookieText, dismissText, linkText, linkHref, false);
     }
 
     function showCookieConsentDialog(cookieText, dismissText, linkText, linkHref) {

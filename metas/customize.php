@@ -40,53 +40,14 @@ function artskory_customize_register($wp_customize) {
 			)));
 
 		// 	Setting more
-			$wp_customize->add_setting('More', array(
+			$wp_customize->add_setting('more', array(
 				'default' => __("", "artskory"),
 				'transport' => 'refresh'
 			));
 
-			$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'More', array(
+			$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'more', array(
 				'label' => __("Texte En savoir plus", "artskory"),
 				'section' => 'cookies',
-			)));
-
-		// Frame color
-			$wp_customize->add_setting('frame_color', array(
-				'default' => '#fff',
-				'transport' => 'refresh'
-			));
-
-			$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize,
-				'body_background_color', array(
-					'label' => __("Couleur d’encadré", 'artskory'),
-					'section' => 'cookies',
-					'settings' => 'frame_color'
-			)));
-
-		// Glow color
-			$wp_customize->add_setting('glow_color', array(
-				'default' => '#888',
-				'transport' => 'refresh'
-			));
-
-			$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize,
-				'glow_color', array(
-					'label' => __("Couleur de lueur", 'artskory'),
-					'section' => 'cookies',
-					'settings' => 'glow_color'
-			)));
-
-		// Background color
-			$wp_customize->add_setting('background_color_cookie', array(
-				'default' => '#143444',
-				'transport' => 'refresh'
-			));
-
-			$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize,
-				'background_color_cookie', array(
-					'label' => __("Couleur de lueur", 'artskory'),
-					'section' => 'cookies',
-					'settings' => 'background_color_cookie'
 			)));
 
 		// Legal link
