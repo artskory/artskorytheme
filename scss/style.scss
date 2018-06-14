@@ -26,9 +26,12 @@ ul {
     list-style: none; }
 
 /* Logo */
-.navbar-brand h1 {
-    font-size: 1.5em;
-    font-weight: 300; }
+.navbar-brand {
+    color: #fff !important;
+    h1 {
+        font-size: 1.5em;
+        font-weight: 300; }
+}
 
 /* Liens */
 .navbar-nav {
@@ -239,7 +242,7 @@ a.btn.white {
     @include project-designs-border(1px solid $project-designs);
     background: #fafafa;
     a {
-        color: inherit;
+        color: inherit !important;
         text-decoration: none; }
 }
 

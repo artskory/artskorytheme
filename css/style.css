@@ -30,9 +30,11 @@ ul {
   list-style: none; }
 
 /* Logo */
-.navbar-brand h1 {
-  font-size: 1.5em;
-  font-weight: 300; }
+.navbar-brand {
+  color: #fff !important; }
+  .navbar-brand h1 {
+    font-size: 1.5em;
+    font-weight: 300; }
 
 /* Liens */
 .navbar-nav .active a {
@@ -241,7 +243,7 @@ a.btn.white {
   border-bottom: 1px solid #ececec;
   background: #fafafa; }
   .project-designs a {
-    color: inherit;
+    color: inherit !important;
     text-decoration: none; }
 
 .grow {
