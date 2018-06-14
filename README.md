@@ -1,1 +1,1 @@
-# Version 2.0 HTML du thème artskory.fr
+# Version 2.0 wordpress du thème artskory.fr
